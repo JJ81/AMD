@@ -1,1 +1,2 @@
-# AMD
+# AMD; Asynchronous Module Definition
+
