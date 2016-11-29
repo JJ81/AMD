@@ -2,34 +2,18 @@
 <html>
 <head>
 	<title>AMD Test2</title>
-	<!-- <link rel="stylesheet" type="text/css" href="Styles/bootstrap.css"> -->
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 </head>
 <body>
 
 <div class="container">
 	
-	<h1>RequireJS - AMD</h1>
+	<h1>Tooltip test</h1>
 	
 	<div class="row">
 		<div class="span12">
 			<div class="tooltip-demo well">
-				<p>Wouldn't it be nice to see a Tooltip <a href="#" class="modal-btn" data-toggle="tooltip" title="I can do tooltip" placement="top">right here</a>?</p>
-
-				<!-- 
-					tooltip button 
-					http://getbootstrap.com/javascript/#tooltips
-				-->
-				<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button><button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
-
-				<br /><br />
-
-				<!-- 
-					Popover
-					http://getbootstrap.com/javascript/#popovers
-				 -->
-				
-				<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-trigger="focus">Popover on left</button>
+				<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-trigger="focus">Popover on left</button>
 
 		        <button type="button" class="btn btn-default" data-container="body" data-title="Static" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-trigger="focus">
 		          Popover on top
@@ -43,21 +27,41 @@
 
 		        <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
 
-
-
 			</div>
 		</div>
 	</div>
 
-	
-
 	<div id="myModal"></div>
 </div>
 
+<script data-main="Scripts/app" src="Scripts/require.2.3.2.js"></script>
 
-
-<!-- requirejs가 실행이 되고 나서 data-main entry point로부터 설정 부분을 호출하게 된다. -->
-<script data-main="Scripts/app" src="Scripts/require.js"></script>
-
+<!-- 아래와 같이 필요한 부분에 대해서 실행을 할 수 있다. -->
+<script type="text/javascript">
+	// requirejs(["test1"]);
+</script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
